@@ -1,0 +1,8 @@
+ColumnTransformer(transformers=[('num',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='median')),
+                                                 ('scaler', StandardScaler())]),
+                                 ['bedroom', 'bathroom', 'sqm', 'built_year',
+                                  'luxuary', 'public', 'BRT_distance',
+                                  'BTS_distance', 'MRT_distance',
+               ...

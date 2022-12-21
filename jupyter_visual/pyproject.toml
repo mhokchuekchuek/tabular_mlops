@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "research"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+ipywidgets = "^7.7.0"
+widgetsnbextension = "^3.6.0"
+pandas-profiling = "^3.2.0"
+jupyter-contrib-nbextensions = "^0.5.1"
+jupyterlab = "^3.5.1"
+statsmodels = "^0.13.2"
+requests = "^2.27.1"
+python = ">=3.9.13,<3.10.0"
+azureml-interpret  = "^1.47.0"
+raiwidgets = "^0.23.0"
+joblib = "^1.2.0"
+streamlit = "^1.15.1"
+jupyterhub = "^3.0.0"
+lime = "^0.2.0.1"
+plotly = "^5.11.0"
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

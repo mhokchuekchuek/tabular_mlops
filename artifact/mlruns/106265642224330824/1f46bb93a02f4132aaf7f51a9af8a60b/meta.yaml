@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/106265642224330824/1f46bb93a02f4132aaf7f51a9af8a60b/artifacts
+deleted_time: 1671636683093
+end_time: 1671633757715
+entry_point_name: ''
+experiment_id: '106265642224330824'
+lifecycle_stage: deleted
+run_id: 1f46bb93a02f4132aaf7f51a9af8a60b
+run_name: non_remove_outlier median StandardScaler
+run_uuid: 1f46bb93a02f4132aaf7f51a9af8a60b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671633727175
+status: 3
+tags: []
+user_id: root

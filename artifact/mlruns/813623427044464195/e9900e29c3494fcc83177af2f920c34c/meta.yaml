@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/813623427044464195/e9900e29c3494fcc83177af2f920c34c/artifacts
+deleted_time: 1671636683119
+end_time: 1671629612023
+entry_point_name: ''
+experiment_id: '813623427044464195'
+lifecycle_stage: deleted
+run_id: e9900e29c3494fcc83177af2f920c34c
+run_name: LGBMRegressor {}
+run_uuid: e9900e29c3494fcc83177af2f920c34c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671629601087
+status: 3
+tags: []
+user_id: root

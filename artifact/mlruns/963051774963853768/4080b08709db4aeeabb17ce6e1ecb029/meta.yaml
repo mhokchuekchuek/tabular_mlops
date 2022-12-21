@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/963051774963853768/4080b08709db4aeeabb17ce6e1ecb029/artifacts
+end_time: 1671636752962
+entry_point_name: ''
+experiment_id: '963051774963853768'
+lifecycle_stage: active
+run_id: 4080b08709db4aeeabb17ce6e1ecb029
+run_name: non_remove_outlier median StandardScaler
+run_uuid: 4080b08709db4aeeabb17ce6e1ecb029
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671636738887
+status: 3
+tags: []
+user_id: root

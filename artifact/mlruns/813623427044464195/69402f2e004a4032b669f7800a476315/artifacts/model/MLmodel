@@ -1,0 +1,61 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 2.0.1
+model_uuid: a0df8961ed5344cc8548c5968b0c4bb2
+run_id: 69402f2e004a4032b669f7800a476315
+signature:
+  inputs: '[{"name": "bedroom", "type": "long"}, {"name": "bathroom", "type": "long"},
+    {"name": "sqm", "type": "double"}, {"name": "developer", "type": "string"}, {"name":
+    "built_year", "type": "long"}, {"name": "district", "type": "string"}, {"name":
+    "luxuary", "type": "long"}, {"name": "public", "type": "long"}, {"name": "BRT_distance",
+    "type": "long"}, {"name": "BTS_distance", "type": "long"}, {"name": "MRT_distance",
+    "type": "long"}, {"name": "APL_distance", "type": "long"}, {"name": "Air-Conditioning",
+    "type": "long"}, {"name": "Audio System", "type": "long"}, {"name": "BBQ pits",
+    "type": "long"}, {"name": "Basketball court", "type": "long"}, {"name": "Bathtub",
+    "type": "long"}, {"name": "Bed", "type": "long"}, {"name": "Billiards room", "type":
+    "long"}, {"name": "Broadband Internet", "type": "long"}, {"name": "Club", "type":
+    "long"}, {"name": "Clubhouse", "type": "long"}, {"name": "Colonial Building",
+    "type": "long"}, {"name": "Corner Unit", "type": "long"}, {"name": "DVD Player",
+    "type": "long"}, {"name": "Dishwasher", "type": "long"}, {"name": "Driving range",
+    "type": "long"}, {"name": "Dryer", "type": "long"}, {"name": "Fridge", "type":
+    "long"}, {"name": "Function room", "type": "long"}, {"name": "Game room", "type":
+    "long"}, {"name": "Ground Floor", "type": "long"}, {"name": "Hairdryer", "type":
+    "long"}, {"name": "High Floor", "type": "long"}, {"name": "ISDN", "type": "long"},
+    {"name": "Internet Connection", "type": "long"}, {"name": "Iron / Ironing Board",
+    "type": "long"}, {"name": "Jacuzzi", "type": "long"}, {"name": "Karaoke", "type":
+    "long"}, {"name": "Kitchen", "type": "long"}, {"name": "Launderette", "type":
+    "long"}, {"name": "Library", "type": "long"}, {"name": "Lounge", "type": "long"},
+    {"name": "Low Floor", "type": "long"}, {"name": "Maidsroom", "type": "long"},
+    {"name": "Mini golf range", "type": "long"}, {"name": "Mini-Mart", "type": "long"},
+    {"name": "Multi-purpose hall", "type": "long"}, {"name": "Original Condition",
+    "type": "long"}, {"name": "Outdoor Patio", "type": "long"}, {"name": "Own Chiller
+    Plant", "type": "long"}, {"name": "Pantry", "type": "long"}, {"name": "Pavillion",
+    "type": "long"}, {"name": "Penthouse", "type": "long"}, {"name": "Playground",
+    "type": "long"}, {"name": "Private Garden", "type": "long"}, {"name": "Private
+    Pool", "type": "long"}, {"name": "Putting Green", "type": "long"}, {"name": "Reflexology
+    Path", "type": "long"}, {"name": "Renovated", "type": "long"}, {"name": "Roof
+    Terrace", "type": "long"}, {"name": "SCV/SMATV System", "type": "long"}, {"name":
+    "Sea View", "type": "long"}, {"name": "Sky Lounge", "type": "long"}, {"name":
+    "Squash court", "type": "long"}, {"name": "Tennis courts", "type": "long"}, {"name":
+    "Vacuum Cleaner", "type": "long"}, {"name": "Walk-in-wardrobe", "type": "long"},
+    {"name": "Washing Machine", "type": "long"}, {"name": "Water Heater", "type":
+    "long"}, {"name": "balcony", "type": "long"}, {"name": "car park", "type": "long"},
+    {"name": "cook", "type": "long"}, {"name": "fitness", "type": "long"}, {"name":
+    "furniture", "type": "long"}, {"name": "nan", "type": "long"}, {"name": "pool",
+    "type": "long"}, {"name": "sauna", "type": "long"}, {"name": "security", "type":
+    "long"}, {"name": "tv", "type": "long"}, {"name": "view", "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-12-21 15:32:43.854293'

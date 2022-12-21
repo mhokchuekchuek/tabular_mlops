@@ -1,0 +1,122 @@
+version: '3.7'
+services:
+  notebook:
+    build:
+      context: ./jupyter
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    depends_on: 
+      - mlflow
+    environment: 
+      MLFLOW_TRACKING_URI: 'http://mlflow:5555'
+    volumes:
+      - ./jupyter:/code
+      - ./ml_data:/ml_data
+      - ./artifact:/artifact
+      - ./python_script:/code/notebook/script
+      - ./great_expectation:/great_expectation
+      - ./save_pipeline:/save_pipeline
+      - ./eda_html:/eda_html
+      - ./model_interpret:/model_interpret
+    command: jupyter-lab notebook --notebook-dir=/code/notebook --ip='0.0.0.0' --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
+  
+  mlflow:
+    build:
+      context: ./mlflow
+    expose: 
+      - "5555"
+    ports:
+      - "5555:5555"
+    volumes:
+      - ./artifact:/artifact
+
+  notebook_visual:
+    build:
+      context: ./jupyter_visual
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on: 
+      - mlflow
+    environment: 
+      MLFLOW_TRACKING_URI: 'http://mlflow:5555'
+    volumes:
+      - ./jupyter_visual:/code
+      - ./ml_data:/ml_data
+      - ./artifact:/artifact
+      - ./python_function:/code/notebook/script
+      - ./great_expectation:/great_expectation
+      - ./save_pipeline:/save_pipeline
+      - ./eda_html:/eda_html
+      - ./model_interpret:/model_interpret
+      - ./python_script:/notebook_script
+    command: jupyter-lab notebook --notebook-dir=/code/notebook --ip='0.0.0.0' --port=8000 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
+
+  data_qa:
+    build:
+      context: ./dq_docker
+      dockerfile: Dockerfile
+    ports:
+      - "8504:8504"
+    volumes:
+      - ./jupyter_visual:/code
+      - ./ml_data:/ml_data
+      - ./artifact:/artifact
+      - ./python_function:/code/notebook/script
+      - ./great_expectation:/great_expectation
+      - ./save_pipeline:/save_pipeline
+      - ./eda_html:/eda_html
+      - ./model_interpret:/model_interpret
+    command: streamlit run /code/notebook/script/run_streamlit_eda.py --server.port 8504
+
+  eda:
+    build:
+      context: ./eda_docker
+      dockerfile: Dockerfile
+    ports:
+      - "8503:8503"
+    volumes:
+      - ./jupyter_visual:/code
+      - ./ml_data:/ml_data
+      - ./artifact:/artifact
+      - ./python_function:/code/notebook/script
+      - ./great_expectation:/great_expectation
+      - ./save_pipeline:/save_pipeline
+      - ./eda_html:/eda_html
+      - ./model_interpret:/model_interpret
+    command: streamlit run /code/notebook/script/run_streamlit_dq.py --server.port 8503
+
+  streamlit_eval:
+    build:
+      context: ./jupyter_visual
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./jupyter_visual:/code
+      - ./ml_data:/ml_data
+      - ./artifact:/artifact
+      - ./python_function:/code/notebook/script
+      - ./great_expectation:/great_expectation
+      - ./save_pipeline:/save_pipeline
+      - ./eda_html:/eda_html
+      - ./model_interpret:/model_interpret
+    command: streamlit run /code/notebook/script/run_streamlit_evaluate.py
+
+  streamlit_interpret:
+    build:
+      context: ./streamlit_docker
+      dockerfile: Dockerfile
+    ports:
+      - "8502:8502"
+    volumes:
+      - ./jupyter_visual:/code
+      - ./ml_data:/ml_data
+      - ./artifact:/artifact
+      - ./python_function:/code/notebook/script
+      - ./great_expectation:/great_expectation
+      - ./save_pipeline:/save_pipeline
+      - ./eda_html:/eda_html
+      - ./model_interpret:/model_interpret
+    command: streamlit run /code/notebook/script/run_streamlit_interpret.py --server.port 8502
