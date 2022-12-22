@@ -1,15 +1,16 @@
 import numpy as np
 import warnings
-from lime import submodular_pick
 from tqdm import tqdm
-from lime.lime_tabular import LimeTabularExplainer
+import shap
 import pandas as pd
 import joblib
+import shap
 
 X_train = pd.read_csv("/ml_data/X_train.csv").drop(columns = "Unnamed: 0")
 y_train = pd.read_csv("/ml_data/y_train.csv").drop(columns = "Unnamed: 0")
 X_test = pd.read_csv("/ml_data/X_test.csv").drop(columns = "Unnamed: 0")
 y_test = pd.read_csv("/ml_data/y_test.csv").drop(columns = "Unnamed: 0")
+feature_names = list(X_train.columns)
 model = joblib.load("/artifact/mlruns/813623427044464195/69402f2e004a4032b669f7800a476315/artifacts/model/model.pkl")
 # model = joblib.load("/artifact/mlruns/941649382202349625/e311be07056d4a4fa7413ec46830e13b/artifacts/model/model.pkl")
 task = "regression"
@@ -26,75 +27,13 @@ for i in range(len(model["preprocessor"].transformers_)):
             all_columns.extend(list(model['preprocessor'].transformers_[1][1].categories_[j]))
             cat_feature.append(list(model['preprocessor'].transformers_[1][1].categories_[j]))
             
-def load_transform(file_name):
-    preprocessor = joblib.load(f'/save_pipeline/{file_name}.pkl')
-    return preprocessor
-    
-if str(model[1]) ==  'KNeighborsClassifier()':
-    pred_model = model[-1].predict_proba
-else:
-    pred_model = model[-1].predict
-
-def check_type(df)-> list[str]:
-    df_columns = list(df.columns)
-    numeric = []
-    catagories = []
-    for values in df.columns:
-        if df[values].dtypes == int or df[values].dtypes == float:
-            numeric.append(values)
-        else:
-            catagories.append(values)
-    return catagories
-
-    
-def check_file():
-    path = Path("/model_interpret")
-    return path.is_file()
-    
-def _explainer(task, target):
-    if task == "classification":
-        class_names = y_train[target].unique()
-        # Fit the Explainer on the training data set using the LimeTabularExplainer 
-        explainer = LimeTabularExplainer(load_transform(pipeline_name).fit_transform(X_train), feature_names = all_columns, class_names = class_names, mode = task, categorical_features = cat_feature)
-    else:
-        explainer = LimeTabularExplainer(load_transform(pipeline_name).fit_transform(X_train), feature_names = all_columns, mode = "regression", class_names = [target], categorical_features = cat_feature)
-        
-    return explainer
-
-def return_x(explaination, int_x):
-    return explaination.domain_mapper.feature_names[int_x]
-
-def return_x_2(explaination,int_x, i):
-    return explaination.explanations[i].domain_mapper.feature_names[int_x]
-
-def _to_csv_local(lime_obj, num):
-    cols = ["importance_values_"+i for i in [lime_obj.domain_mapper.feature_names][0]]
-    values = lime_obj.domain_mapper.feature_values
-    arr = np.array(values).reshape((1, len(cols)))
-    df_x = pd.DataFrame(arr , columns = cols)
-    return pd.concat([X_test[X_test.index == num], df_x], axis = 1)
-    
-
-def _to_csv_global(lime_obj):
-    all_df = []
-    for i in range(0,5):
-        cols = lime_obj.explanations[i].domain_mapper.feature_names
-        values = lime_obj.explanations[i].domain_mapper.feature_values
-        arr = np.array(values).reshape((1, len(list(lime_obj.explanations[i].local_exp.values())[0])))
-        all_df.append(pd.DataFrame(arr , columns = cols))
-    return pd.concat(all_df, ignore_index =True)
-
-def save_to_csv(task, target):
-    all_df_local = []
-    num = -1
-    for i in tqdm(model[0].fit_transform(X_test)):
-        num+=1
-        explainer = _explainer(task, target)
-        explaination = explainer.explain_instance(i, pred_model)
-        all_df_local.append(_to_csv_local(explaination, num))
-        
-    explainer = _explainer(task, target)
-    sp_obj = submodular_pick.SubmodularPick(explainer, model[0].fit_transform(X_train), pred_model, num_features= len(all_columns), num_exps_desired = 5)
-    all_df_global = _to_csv_global(sp_obj)
-    pd.concat(all_df_local, ignore_index = True).fillna(0).to_csv("/model_interpret/local.csv")
-    all_df_global.fillna(0).to_csv("/model_interpret/global.csv")
+def save_to_csv():
+    explainer = shap.TreeExplainer(model[1] ,feature_names = all_columns)
+    X_test_ja = pd.DataFrame(model[0].fit_transform(X_test), columns = all_columns)
+    ## inverse standard scaler => check_columns_that_numeric_and_inverse_it 
+    X_test_ja.iloc[:,:79] = model[0].transformers_[0][1].steps[1][1].inverse_transform(X_test_ja.iloc[:,:79])
+    shap_values = explainer.shap_values(model[0].fit_transform(X_test))
+    global_values = pd.DataFrame(np.reshape(sum(np.abs(shap_values))/len(sum(np.abs(shap_values))), newshape = (1,-1)), columns = all_columns)
+    train_dependency_values = pd.DataFrame(np.abs(shap_values), columns = ["importance_values_" + i for i in all_columns])
+    pd.concat([train_dependency_values, X_test_ja], axis = 1).to_csv("/model_interpret/local.csv")
+    global_values.to_csv("/model_interpret/global.csv")

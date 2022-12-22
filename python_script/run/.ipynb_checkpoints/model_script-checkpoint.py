@@ -13,7 +13,7 @@ data = pd.read_csv("/ml_data/ddproperty_final.csv").drop(columns = "Unnamed: 0")
 #split_data
 X_train, X_test, y_train, y_test= split_data_with_drift_check(data, "regression", "price")
 
-train
+#train
 a = [
     {
     'model':"RandomForestRegressor",

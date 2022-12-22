@@ -6,7 +6,7 @@ X_train = pd.read_csv("/ml_data/X_train.csv").drop(columns = "Unnamed: 0")
 y_train = pd.read_csv("/ml_data/y_train.csv").drop(columns = "Unnamed: 0")
 X_test = pd.read_csv("/ml_data/X_test.csv").drop(columns = "Unnamed: 0")
 y_test = pd.read_csv("/ml_data/y_test.csv").drop(columns = "Unnamed: 0")
-model = joblib.load("/artifact/mlruns/106265642224330824/382b875fa1544292b580a0674ec371dc/artifacts/model/model.pkl")
+model = joblib.load("/artifact/mlruns/813623427044464195/2cfa40c2107c47cebc0450c6ed0ddbd0/artifacts/model/model.pkl")
 
 # test_set
 target = y_train.columns[0]

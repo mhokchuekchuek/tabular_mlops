@@ -46,7 +46,7 @@ def transformer(df:pandas_df, remove_outlier:bool = False, strategy:str = 'media
     if numeric_features and categorical_features:
         numeric_transformer = Pipeline(steps=[('imputer', SimpleImputer(strategy = strategy)),
             ('scaler', Scaler)])
-        categorical_transformer = OneHotEncoder(handle_unknown='ignore')
+        categorical_transformer = Pipeline(steps = [("one_hot", OneHotEncoder(handle_unknown='ignore'))])
         preprocessor = ColumnTransformer(
             transformers = [
                 ('num', numeric_transformer, numeric_features),
@@ -62,7 +62,7 @@ def transformer(df:pandas_df, remove_outlier:bool = False, strategy:str = 'media
         return preprocessor
         
     if categorical_features and not numeric_features:
-        categorical_transformer = OneHotEncoder(handle_unknown='ignore')
+        categorical_transformer = Pipeline(steps = [("one_hot", OneHotEncoder(handle_unknown='ignore'))])
         preprocessor = ColumnTransformer(
             transformers = [
                 ('cat', categorical_transformer, categorical_features)])
