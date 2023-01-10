@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/c5d78ae58a5b45b28df5219571cbedb4/artifacts
+deleted_time: 1672224840644
+end_time: 1672224743189
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: c5d78ae58a5b45b28df5219571cbedb4
+run_name: painted-snail-770
+run_uuid: c5d78ae58a5b45b28df5219571cbedb4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672224592782
+status: 3
+tags: []
+user_id: root

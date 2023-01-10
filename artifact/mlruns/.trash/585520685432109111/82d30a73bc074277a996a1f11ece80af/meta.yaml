@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/585520685432109111/82d30a73bc074277a996a1f11ece80af/artifacts
+end_time: 1672238962877
+entry_point_name: ''
+experiment_id: '585520685432109111'
+lifecycle_stage: active
+run_id: 82d30a73bc074277a996a1f11ece80af
+run_name: crawling-grub-794
+run_uuid: 82d30a73bc074277a996a1f11ece80af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672238962272
+status: 4
+tags: []
+user_id: root

@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/3c4d133b46ee4459a2a0bbe8ee06d28e/artifacts
+deleted_time: 1672085926396
+end_time: 1672085564166
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: 3c4d133b46ee4459a2a0bbe8ee06d28e
+run_name: judicious-ant-109
+run_uuid: 3c4d133b46ee4459a2a0bbe8ee06d28e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085539817
+status: 3
+tags: []
+user_id: root

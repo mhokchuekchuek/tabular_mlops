@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/286978358198217900/3e13ad01c045414a8e0142faf0310c3c/artifacts
+deleted_time: 1672238994255
+end_time: 1672238227077
+entry_point_name: ''
+experiment_id: '286978358198217900'
+lifecycle_stage: deleted
+run_id: 3e13ad01c045414a8e0142faf0310c3c
+run_name: unruly-yak-894
+run_uuid: 3e13ad01c045414a8e0142faf0310c3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672238227061
+status: 4
+tags: []
+user_id: root

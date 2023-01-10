@@ -25,6 +25,7 @@ optuna = "^3.0.3"
 scikit-learn = "1.0.2"
 xgboost = "^1.7.2"
 deepchecks = "^0.10.0"
+evidently = "^0.2.1"
 [tool.poetry.dev-dependencies]
 
 [build-system]

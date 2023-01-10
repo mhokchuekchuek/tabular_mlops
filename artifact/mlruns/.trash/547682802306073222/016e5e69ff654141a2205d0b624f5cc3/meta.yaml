@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/547682802306073222/016e5e69ff654141a2205d0b624f5cc3/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '547682802306073222'
+lifecycle_stage: active
+run_id: 016e5e69ff654141a2205d0b624f5cc3
+run_name: sneaky-lynx-595
+run_uuid: 016e5e69ff654141a2205d0b624f5cc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672236164515
+status: 1
+tags: []
+user_id: unknown

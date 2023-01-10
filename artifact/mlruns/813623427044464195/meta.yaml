@@ -1,6 +1,0 @@
-artifact_location: /artifact/mlruns/813623427044464195
-creation_time: 1671629579069
-experiment_id: '813623427044464195'
-last_update_time: 1671629579069
-lifecycle_stage: active
-name: LGBMRegressor

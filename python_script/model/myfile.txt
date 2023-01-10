@@ -1,1 +1,16 @@
-non_remove_outlier median StandardScaler
+/save_pipeline/pipeline_06_01_23_00:28:19.pkl 
+/save_pipeline/pipeline_06_01_23_00:40:22.pkl 
+/save_pipeline/pipeline_06_01_23_00:42:29.pkl 
+/save_pipeline/pipeline_06_01_23_01:08:43.pkl 
+/save_pipeline/pipeline_06_01_23_01:09:43.pkl 
+/save_pipeline/pipeline_06_01_23_01:44:55.pkl 
+/save_pipeline/pipeline_06_01_23_01:58:18.pkl 
+/save_pipeline/pipeline_09_01_23_01:06:03.pkl 
+/save_pipeline/pipeline_09_01_23_01:10:25.pkl 
+/save_pipeline/pipeline_09_01_23_01:13:33.pkl 
+/save_pipeline/pipeline_09_01_23_01:15:04.pkl 
+/save_pipeline/pipeline_09_01_23_01:31:38.pkl 
+/save_pipeline/pipeline_09_01_23_02:04:42.pkl 
+/save_pipeline/pipeline_09_01_23_02:07:37.pkl 
+/save_pipeline/pipeline_09_01_23_02:13:43.pkl 
+/save_pipeline/pipeline_09_01_23_03:02:45.pkl 

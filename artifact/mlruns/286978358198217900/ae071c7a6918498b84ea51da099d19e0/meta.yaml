@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/286978358198217900/ae071c7a6918498b84ea51da099d19e0/artifacts
+deleted_time: 1672238994245
+end_time: 1672238341913
+entry_point_name: ''
+experiment_id: '286978358198217900'
+lifecycle_stage: deleted
+run_id: ae071c7a6918498b84ea51da099d19e0
+run_name: spiffy-flea-522
+run_uuid: ae071c7a6918498b84ea51da099d19e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672238340209
+status: 4
+tags: []
+user_id: root

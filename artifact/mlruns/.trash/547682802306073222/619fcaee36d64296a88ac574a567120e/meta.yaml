@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/547682802306073222/619fcaee36d64296a88ac574a567120e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '547682802306073222'
+lifecycle_stage: active
+run_id: 619fcaee36d64296a88ac574a567120e
+run_name: placid-finch-754
+run_uuid: 619fcaee36d64296a88ac574a567120e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672234112395
+status: 1
+tags: []
+user_id: unknown

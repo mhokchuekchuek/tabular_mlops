@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/186436914967240776/ff6b3e5b27f741f894e0bf55fa034ebd/artifacts
+end_time: 1672239549263
+entry_point_name: ''
+experiment_id: '186436914967240776'
+lifecycle_stage: active
+run_id: ff6b3e5b27f741f894e0bf55fa034ebd
+run_name: evalute_eieiza
+run_uuid: ff6b3e5b27f741f894e0bf55fa034ebd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672239544325
+status: 3
+tags: []
+user_id: root

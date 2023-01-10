@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/6671958763c1447e8faf53b36fb7549e/artifacts
+deleted_time: 1672085926396
+end_time: 1672085578654
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: 6671958763c1447e8faf53b36fb7549e
+run_name: receptive-hen-474
+run_uuid: 6671958763c1447e8faf53b36fb7549e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085564411
+status: 3
+tags: []
+user_id: root

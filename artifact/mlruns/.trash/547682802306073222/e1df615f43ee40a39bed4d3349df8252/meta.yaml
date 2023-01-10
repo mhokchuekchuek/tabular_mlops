@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/547682802306073222/e1df615f43ee40a39bed4d3349df8252/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '547682802306073222'
+lifecycle_stage: active
+run_id: e1df615f43ee40a39bed4d3349df8252
+run_name: mysterious-perch-205
+run_uuid: e1df615f43ee40a39bed4d3349df8252
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672236359376
+status: 1
+tags: []
+user_id: unknown

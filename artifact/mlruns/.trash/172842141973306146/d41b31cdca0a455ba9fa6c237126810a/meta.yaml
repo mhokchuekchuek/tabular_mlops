@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/d41b31cdca0a455ba9fa6c237126810a/artifacts
+deleted_time: 1672085926384
+end_time: 1672085590105
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: d41b31cdca0a455ba9fa6c237126810a
+run_name: kindly-fox-649
+run_uuid: d41b31cdca0a455ba9fa6c237126810a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085578757
+status: 3
+tags: []
+user_id: root

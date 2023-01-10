@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/286978358198217900/a6c84d94f63f43739d298d86375454eb/artifacts
+deleted_time: 1672238994248
+end_time: 1672238296631
+entry_point_name: ''
+experiment_id: '286978358198217900'
+lifecycle_stage: deleted
+run_id: a6c84d94f63f43739d298d86375454eb
+run_name: lyrical-horse-518
+run_uuid: a6c84d94f63f43739d298d86375454eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672238294837
+status: 4
+tags: []
+user_id: root

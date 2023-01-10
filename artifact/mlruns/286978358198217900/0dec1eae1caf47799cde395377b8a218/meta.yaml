@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/286978358198217900/0dec1eae1caf47799cde395377b8a218/artifacts
+deleted_time: 1672238994250
+end_time: 1672238249349
+entry_point_name: ''
+experiment_id: '286978358198217900'
+lifecycle_stage: deleted
+run_id: 0dec1eae1caf47799cde395377b8a218
+run_name: fun-frog-916
+run_uuid: 0dec1eae1caf47799cde395377b8a218
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672238247460
+status: 4
+tags: []
+user_id: root

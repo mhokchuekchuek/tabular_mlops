@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/585520685432109111/f197c3b36fbd48fdb9fdc406e7b40756/artifacts
+end_time: 1672238972191
+entry_point_name: ''
+experiment_id: '585520685432109111'
+lifecycle_stage: active
+run_id: f197c3b36fbd48fdb9fdc406e7b40756
+run_name: sedate-dog-557
+run_uuid: f197c3b36fbd48fdb9fdc406e7b40756
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672238969740
+status: 4
+tags: []
+user_id: root

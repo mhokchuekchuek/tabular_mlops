@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/933327044148225629/97d8ff47814f49f0b897ab8f7b36799e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '933327044148225629'
+lifecycle_stage: active
+run_id: 97d8ff47814f49f0b897ab8f7b36799e
+run_name: respected-ox-967
+run_uuid: 97d8ff47814f49f0b897ab8f7b36799e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672233651111
+status: 1
+tags: []
+user_id: unknown

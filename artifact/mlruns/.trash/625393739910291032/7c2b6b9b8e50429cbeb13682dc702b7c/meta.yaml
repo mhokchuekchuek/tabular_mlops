@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/625393739910291032/7c2b6b9b8e50429cbeb13682dc702b7c/artifacts
+end_time: 1672232795501
+entry_point_name: ''
+experiment_id: '625393739910291032'
+lifecycle_stage: active
+run_id: 7c2b6b9b8e50429cbeb13682dc702b7c
+run_name: top_lever_run
+run_uuid: 7c2b6b9b8e50429cbeb13682dc702b7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672232795320
+status: 3
+tags: []
+user_id: root

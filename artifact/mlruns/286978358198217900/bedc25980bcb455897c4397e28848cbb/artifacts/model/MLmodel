@@ -1,0 +1,63 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 2.0.1
+model_uuid: 9af90499c41f4a52a187f4613a6cda22
+run_id: bedc25980bcb455897c4397e28848cbb
+signature:
+  inputs: '[{"name": "bedroom", "type": "double"}, {"name": "bathroom", "type": "double"},
+    {"name": "sqm", "type": "double"}, {"name": "luxuary", "type": "double"}, {"name":
+    "public", "type": "double"}, {"name": "BRT_distance", "type": "double"}, {"name":
+    "BTS_distance", "type": "double"}, {"name": "MRT_distance", "type": "double"},
+    {"name": "APL_distance", "type": "double"}, {"name": "Air-Conditioning", "type":
+    "double"}, {"name": "Audio System", "type": "double"}, {"name": "BBQ pits", "type":
+    "double"}, {"name": "Basketball court", "type": "double"}, {"name": "Bathtub",
+    "type": "double"}, {"name": "Bed", "type": "double"}, {"name": "Billiards room",
+    "type": "double"}, {"name": "Broadband Internet", "type": "double"}, {"name":
+    "Club", "type": "double"}, {"name": "Clubhouse", "type": "double"}, {"name": "Colonial
+    Building", "type": "double"}, {"name": "Corner Unit", "type": "double"}, {"name":
+    "DVD Player", "type": "double"}, {"name": "Dishwasher", "type": "double"}, {"name":
+    "Driving range", "type": "double"}, {"name": "Dryer", "type": "double"}, {"name":
+    "Fridge", "type": "double"}, {"name": "Function room", "type": "double"}, {"name":
+    "Game room", "type": "double"}, {"name": "Ground Floor", "type": "double"}, {"name":
+    "Hairdryer", "type": "double"}, {"name": "High Floor", "type": "double"}, {"name":
+    "ISDN", "type": "double"}, {"name": "Internet Connection", "type": "double"},
+    {"name": "Iron / Ironing Board", "type": "double"}, {"name": "Jacuzzi", "type":
+    "double"}, {"name": "Karaoke", "type": "double"}, {"name": "Kitchen", "type":
+    "double"}, {"name": "Launderette", "type": "double"}, {"name": "Library", "type":
+    "double"}, {"name": "Lounge", "type": "double"}, {"name": "Low Floor", "type":
+    "double"}, {"name": "Maidsroom", "type": "double"}, {"name": "Mini golf range",
+    "type": "double"}, {"name": "Mini-Mart", "type": "double"}, {"name": "Multi-purpose
+    hall", "type": "double"}, {"name": "Original Condition", "type": "double"}, {"name":
+    "Outdoor Patio", "type": "double"}, {"name": "Own Chiller Plant", "type": "double"},
+    {"name": "Pantry", "type": "double"}, {"name": "Pavillion", "type": "double"},
+    {"name": "Penthouse", "type": "double"}, {"name": "Playground", "type": "double"},
+    {"name": "Private Garden", "type": "double"}, {"name": "Private Pool", "type":
+    "double"}, {"name": "Putting Green", "type": "double"}, {"name": "Reflexology
+    Path", "type": "double"}, {"name": "Renovated", "type": "double"}, {"name": "Roof
+    Terrace", "type": "double"}, {"name": "SCV/SMATV System", "type": "double"}, {"name":
+    "Sea View", "type": "double"}, {"name": "Sky Lounge", "type": "double"}, {"name":
+    "Squash court", "type": "double"}, {"name": "Tennis courts", "type": "double"},
+    {"name": "Vacuum Cleaner", "type": "double"}, {"name": "Walk-in-wardrobe", "type":
+    "double"}, {"name": "Washing Machine", "type": "double"}, {"name": "Water Heater",
+    "type": "double"}, {"name": "balcony", "type": "double"}, {"name": "car park",
+    "type": "double"}, {"name": "cook", "type": "double"}, {"name": "fitness", "type":
+    "double"}, {"name": "furniture", "type": "double"}, {"name": "nan", "type": "double"},
+    {"name": "pool", "type": "double"}, {"name": "sauna", "type": "double"}, {"name":
+    "security", "type": "double"}, {"name": "tv", "type": "double"}, {"name": "view",
+    "type": "double"}, {"name": "developer", "type": "double"}, {"name": "built_year",
+    "type": "double"}, {"name": "district", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+utc_time_created: '2023-01-05 17:40:17.141103'

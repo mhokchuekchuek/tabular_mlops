@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/66a99b3f4f5a4058b92a62578c742efc/artifacts
+deleted_time: 1672085432799
+end_time: null
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: 66a99b3f4f5a4058b92a62578c742efc
+run_name: colorful-crab-554
+run_uuid: 66a99b3f4f5a4058b92a62578c742efc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085069950
+status: 1
+tags: []
+user_id: root

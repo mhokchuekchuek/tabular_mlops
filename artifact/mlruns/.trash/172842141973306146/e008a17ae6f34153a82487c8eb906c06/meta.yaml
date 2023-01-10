@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/e008a17ae6f34153a82487c8eb906c06/artifacts
+deleted_time: 1672085926364
+end_time: 1672085878558
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: e008a17ae6f34153a82487c8eb906c06
+run_name: gregarious-snail-69
+run_uuid: e008a17ae6f34153a82487c8eb906c06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085835303
+status: 3
+tags: []
+user_id: root

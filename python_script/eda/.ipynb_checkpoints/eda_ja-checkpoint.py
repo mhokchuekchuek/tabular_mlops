@@ -25,7 +25,7 @@ def _eda(df: Pandas_df, name: str, overwrite: bool = False) -> str:
             profile.to_file(output_file= html_path)
     return html_path
 
-def eda(df: Pandas_df, name: str, overwrite: bool = False) -> str:
+def eda(df: Pandas_df, name: str, overwrite: bool = True) -> str:
     path_to_list  = _eda(df, name, overwrite).split("/")
     template_dir = os.path.abspath("/".join(path_to_list[:-1]))
     a = {}
@@ -35,3 +35,4 @@ def eda(df: Pandas_df, name: str, overwrite: bool = False) -> str:
         json.dump(a, outfile)
     with open("/eda_html/path.json", "w") as outfile:
         json.dump(a, outfile)
+    return _eda(df, name, overwrite)

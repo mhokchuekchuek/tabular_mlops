@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/585520685432109111/b21b17d0f6154895be0477a8269f8093/artifacts
+end_time: 1672238955808
+entry_point_name: ''
+experiment_id: '585520685432109111'
+lifecycle_stage: active
+run_id: b21b17d0f6154895be0477a8269f8093
+run_name: adaptable-bear-403
+run_uuid: b21b17d0f6154895be0477a8269f8093
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672238955763
+status: 4
+tags: []
+user_id: root

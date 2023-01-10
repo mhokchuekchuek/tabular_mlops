@@ -1,6 +1,0 @@
-artifact_location: /artifact/mlruns/963051774963853768
-creation_time: 1671629500574
-experiment_id: '963051774963853768'
-last_update_time: 1671629500574
-lifecycle_stage: active
-name: XGBRegressor

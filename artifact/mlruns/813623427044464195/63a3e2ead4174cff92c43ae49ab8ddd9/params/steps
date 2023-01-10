@@ -1,7 +1,0 @@
-[('preprocessor', ColumnTransformer(transformers=[('cat', OneHotEncoder(handle_unknown='ignore'),
-                                 ['developer', 'district', 'Air-Conditioning',
-                                  'Audio System', 'BBQ pits',
-                                  'Basketball court', 'Bathtub', 'Bed',
-                                  'Billiards room', 'Broadband Internet',
-                                  'Club', 'Clubhouse', 'Colonial Building',
-                                  'C...

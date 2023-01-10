@@ -31,7 +31,4 @@ def remove_duplicates(df: pandas_df, target_col:str)-> pandas_df:
 
 def clean(df: pandas_df, target_col:str)-> pandas_df:
     df_ja = remove_duplicates(df, target_col)
-    df_ja["feature"] = df_ja["feature"].apply(str_to_list)
-    for i in ["BRT_distance", "BTS_distance", "MRT_distance", "APL_distance"]:
-        df_ja[i] = df_ja[i].apply(str_to_int)
     return df_ja

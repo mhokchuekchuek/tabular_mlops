@@ -1,0 +1,1 @@
+/artifact/mlruns/286978358198217900/f303edb7e6134f009bef2f9578d6bde1/artifacts/model/model.pkl

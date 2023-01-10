@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/dfd371f5eee44762a58faa8fadb764ca/artifacts
+deleted_time: 1672085448457
+end_time: null
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: dfd371f5eee44762a58faa8fadb764ca
+run_name: brawny-panda-195
+run_uuid: dfd371f5eee44762a58faa8fadb764ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085069950
+status: 1
+tags: []
+user_id: root

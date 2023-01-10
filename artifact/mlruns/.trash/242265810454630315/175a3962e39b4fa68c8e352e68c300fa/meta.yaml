@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/242265810454630315/175a3962e39b4fa68c8e352e68c300fa/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '242265810454630315'
+lifecycle_stage: active
+run_id: 175a3962e39b4fa68c8e352e68c300fa
+run_name: unleashed-auk-484
+run_uuid: 175a3962e39b4fa68c8e352e68c300fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672236737546
+status: 1
+tags: []
+user_id: unknown

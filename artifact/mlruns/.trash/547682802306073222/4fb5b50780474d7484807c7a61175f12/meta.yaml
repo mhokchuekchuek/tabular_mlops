@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/547682802306073222/4fb5b50780474d7484807c7a61175f12/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '547682802306073222'
+lifecycle_stage: active
+run_id: 4fb5b50780474d7484807c7a61175f12
+run_name: grandiose-gnu-32
+run_uuid: 4fb5b50780474d7484807c7a61175f12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672236359358
+status: 1
+tags: []
+user_id: unknown

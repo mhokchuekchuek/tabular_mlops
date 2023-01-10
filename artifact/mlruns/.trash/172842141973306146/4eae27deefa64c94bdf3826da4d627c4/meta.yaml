@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/4eae27deefa64c94bdf3826da4d627c4/artifacts
+deleted_time: 1672086065689
+end_time: null
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: 4eae27deefa64c94bdf3826da4d627c4
+run_name: crawling-grouse-964
+run_uuid: 4eae27deefa64c94bdf3826da4d627c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672086042432
+status: 1
+tags: []
+user_id: root

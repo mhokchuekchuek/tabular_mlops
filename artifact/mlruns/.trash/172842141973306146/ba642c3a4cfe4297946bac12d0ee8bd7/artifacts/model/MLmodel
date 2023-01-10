@@ -1,0 +1,64 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 2.0.1
+model_uuid: 148c451c8ec043a680aa5f947b557cca
+run_id: ba642c3a4cfe4297946bac12d0ee8bd7
+signature:
+  inputs: '[{"name": "0", "type": "double"}, {"name": "1", "type": "double"}, {"name":
+    "2", "type": "double"}, {"name": "3", "type": "double"}, {"name": "4", "type":
+    "double"}, {"name": "5", "type": "double"}, {"name": "6", "type": "double"}, {"name":
+    "7", "type": "double"}, {"name": "8", "type": "double"}, {"name": "9", "type":
+    "double"}, {"name": "10", "type": "double"}, {"name": "11", "type": "double"},
+    {"name": "12", "type": "double"}, {"name": "13", "type": "double"}, {"name": "14",
+    "type": "double"}, {"name": "15", "type": "double"}, {"name": "16", "type": "double"},
+    {"name": "17", "type": "double"}, {"name": "18", "type": "double"}, {"name": "19",
+    "type": "double"}, {"name": "20", "type": "double"}, {"name": "21", "type": "double"},
+    {"name": "22", "type": "double"}, {"name": "23", "type": "double"}, {"name": "24",
+    "type": "double"}, {"name": "25", "type": "double"}, {"name": "26", "type": "double"},
+    {"name": "27", "type": "double"}, {"name": "28", "type": "double"}, {"name": "29",
+    "type": "double"}, {"name": "30", "type": "double"}, {"name": "31", "type": "double"},
+    {"name": "32", "type": "double"}, {"name": "33", "type": "double"}, {"name": "34",
+    "type": "double"}, {"name": "35", "type": "double"}, {"name": "36", "type": "double"},
+    {"name": "37", "type": "double"}, {"name": "38", "type": "double"}, {"name": "39",
+    "type": "double"}, {"name": "40", "type": "double"}, {"name": "41", "type": "double"},
+    {"name": "42", "type": "double"}, {"name": "43", "type": "double"}, {"name": "44",
+    "type": "double"}, {"name": "45", "type": "double"}, {"name": "46", "type": "double"},
+    {"name": "47", "type": "double"}, {"name": "48", "type": "double"}, {"name": "49",
+    "type": "double"}, {"name": "50", "type": "double"}, {"name": "51", "type": "double"},
+    {"name": "52", "type": "double"}, {"name": "53", "type": "double"}, {"name": "54",
+    "type": "double"}, {"name": "55", "type": "double"}, {"name": "56", "type": "double"},
+    {"name": "57", "type": "double"}, {"name": "58", "type": "double"}, {"name": "59",
+    "type": "double"}, {"name": "60", "type": "double"}, {"name": "61", "type": "double"},
+    {"name": "62", "type": "double"}, {"name": "63", "type": "double"}, {"name": "64",
+    "type": "double"}, {"name": "65", "type": "double"}, {"name": "66", "type": "double"},
+    {"name": "67", "type": "double"}, {"name": "68", "type": "double"}, {"name": "69",
+    "type": "double"}, {"name": "70", "type": "double"}, {"name": "71", "type": "double"},
+    {"name": "72", "type": "double"}, {"name": "73", "type": "double"}, {"name": "74",
+    "type": "double"}, {"name": "75", "type": "double"}, {"name": "76", "type": "double"},
+    {"name": "77", "type": "double"}, {"name": "78", "type": "double"}, {"name": "79",
+    "type": "double"}, {"name": "80", "type": "double"}, {"name": "81", "type": "double"},
+    {"name": "82", "type": "double"}, {"name": "83", "type": "double"}, {"name": "84",
+    "type": "double"}, {"name": "85", "type": "double"}, {"name": "86", "type": "double"},
+    {"name": "87", "type": "double"}, {"name": "88", "type": "double"}, {"name": "89",
+    "type": "double"}, {"name": "90", "type": "double"}, {"name": "91", "type": "double"},
+    {"name": "92", "type": "double"}, {"name": "93", "type": "double"}, {"name": "94",
+    "type": "double"}, {"name": "95", "type": "double"}, {"name": "96", "type": "double"},
+    {"name": "97", "type": "double"}, {"name": "98", "type": "double"}, {"name": "99",
+    "type": "double"}, {"name": "100", "type": "double"}, {"name": "101", "type":
+    "double"}, {"name": "102", "type": "double"}, {"name": "103", "type": "double"},
+    {"name": "104", "type": "double"}, {"name": "105", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+utc_time_created: '2022-12-28 11:01:24.988249'

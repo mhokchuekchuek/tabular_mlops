@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/dd68276a614a42509aabec29f7bb75dd/artifacts
+deleted_time: 1672085926399
+end_time: 1672085464235
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: dd68276a614a42509aabec29f7bb75dd
+run_name: useful-lynx-718
+run_uuid: dd68276a614a42509aabec29f7bb75dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085452708
+status: 3
+tags: []
+user_id: root

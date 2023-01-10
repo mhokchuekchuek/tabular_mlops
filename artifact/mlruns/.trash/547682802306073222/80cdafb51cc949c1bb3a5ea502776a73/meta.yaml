@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/547682802306073222/80cdafb51cc949c1bb3a5ea502776a73/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '547682802306073222'
+lifecycle_stage: active
+run_id: 80cdafb51cc949c1bb3a5ea502776a73
+run_name: upset-lynx-312
+run_uuid: 80cdafb51cc949c1bb3a5ea502776a73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672236359394
+status: 1
+tags: []
+user_id: unknown

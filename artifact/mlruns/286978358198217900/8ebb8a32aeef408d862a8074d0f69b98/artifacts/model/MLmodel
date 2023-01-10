@@ -1,0 +1,118 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 2.0.1
+model_uuid: 8645ed287ceb47d6aef8485167fe87cb
+run_id: 8ebb8a32aeef408d862a8074d0f69b98
+signature:
+  inputs: '[{"name": "bedroom", "type": "double"}, {"name": "bathroom", "type": "double"},
+    {"name": "sqm", "type": "double"}, {"name": "luxuary", "type": "double"}, {"name":
+    "public", "type": "double"}, {"name": "BRT_distance", "type": "double"}, {"name":
+    "BTS_distance", "type": "double"}, {"name": "MRT_distance", "type": "double"},
+    {"name": "APL_distance", "type": "double"}, {"name": "Air-Conditioning", "type":
+    "double"}, {"name": "Audio System", "type": "double"}, {"name": "BBQ pits", "type":
+    "double"}, {"name": "Basketball court", "type": "double"}, {"name": "Bathtub",
+    "type": "double"}, {"name": "Bed", "type": "double"}, {"name": "Billiards room",
+    "type": "double"}, {"name": "Broadband Internet", "type": "double"}, {"name":
+    "Club", "type": "double"}, {"name": "Clubhouse", "type": "double"}, {"name": "Colonial
+    Building", "type": "double"}, {"name": "Corner Unit", "type": "double"}, {"name":
+    "DVD Player", "type": "double"}, {"name": "Dishwasher", "type": "double"}, {"name":
+    "Driving range", "type": "double"}, {"name": "Dryer", "type": "double"}, {"name":
+    "Fridge", "type": "double"}, {"name": "Function room", "type": "double"}, {"name":
+    "Game room", "type": "double"}, {"name": "Ground Floor", "type": "double"}, {"name":
+    "Hairdryer", "type": "double"}, {"name": "High Floor", "type": "double"}, {"name":
+    "ISDN", "type": "double"}, {"name": "Internet Connection", "type": "double"},
+    {"name": "Iron / Ironing Board", "type": "double"}, {"name": "Jacuzzi", "type":
+    "double"}, {"name": "Karaoke", "type": "double"}, {"name": "Kitchen", "type":
+    "double"}, {"name": "Launderette", "type": "double"}, {"name": "Library", "type":
+    "double"}, {"name": "Lounge", "type": "double"}, {"name": "Low Floor", "type":
+    "double"}, {"name": "Maidsroom", "type": "double"}, {"name": "Mini golf range",
+    "type": "double"}, {"name": "Mini-Mart", "type": "double"}, {"name": "Multi-purpose
+    hall", "type": "double"}, {"name": "Original Condition", "type": "double"}, {"name":
+    "Outdoor Patio", "type": "double"}, {"name": "Own Chiller Plant", "type": "double"},
+    {"name": "Pantry", "type": "double"}, {"name": "Pavillion", "type": "double"},
+    {"name": "Penthouse", "type": "double"}, {"name": "Playground", "type": "double"},
+    {"name": "Private Garden", "type": "double"}, {"name": "Private Pool", "type":
+    "double"}, {"name": "Putting Green", "type": "double"}, {"name": "Reflexology
+    Path", "type": "double"}, {"name": "Renovated", "type": "double"}, {"name": "Roof
+    Terrace", "type": "double"}, {"name": "SCV/SMATV System", "type": "double"}, {"name":
+    "Sea View", "type": "double"}, {"name": "Sky Lounge", "type": "double"}, {"name":
+    "Squash court", "type": "double"}, {"name": "Tennis courts", "type": "double"},
+    {"name": "Vacuum Cleaner", "type": "double"}, {"name": "Walk-in-wardrobe", "type":
+    "double"}, {"name": "Washing Machine", "type": "double"}, {"name": "Water Heater",
+    "type": "double"}, {"name": "balcony", "type": "double"}, {"name": "car park",
+    "type": "double"}, {"name": "cook", "type": "double"}, {"name": "fitness", "type":
+    "double"}, {"name": "furniture", "type": "double"}, {"name": "nan", "type": "double"},
+    {"name": "pool", "type": "double"}, {"name": "sauna", "type": "double"}, {"name":
+    "security", "type": "double"}, {"name": "tv", "type": "double"}, {"name": "view",
+    "type": "double"}, {"name": "AP Thailand - \u0e40\u0e2d\u0e1e\u0e35 (\u0e44\u0e17\u0e22\u0e41\u0e25\u0e19\u0e14\u0e4c)
+    \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"},
+    {"name": "Ananda Development - \u0e2d\u0e19\u0e31\u0e19\u0e14\u0e32 \u0e14\u0e35\u0e40\u0e27\u0e25\u0e25\u0e2d\u0e1b\u0e40\u0e21\u0e49\u0e19\u0e17\u0e4c
+    \u0e08\u0e4d\u0e32\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type":
+    "double"}, {"name": "L.P.N. Development - \u0e41\u0e2d\u0e25.\u0e1e\u0e35.\u0e40\u0e2d\u0e47\u0e19.\u0e14\u0e35\u0e40\u0e27\u0e25\u0e25\u0e2d\u0e1b\u0e40\u0e21\u0e49\u0e19\u0e17\u0e4c
+    \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"},
+    {"name": "Land and Houses - \u0e41\u0e25\u0e19\u0e14\u0e4c \u0e41\u0e2d\u0e19\u0e14\u0e4c
+    \u0e40\u0e2e\u0e49\u0e32\u0e2a\u0e4c \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)",
+    "type": "double"}, {"name": "Magnolia Quality Development - \u0e41\u0e21\u0e01\u0e42\u0e19\u0e40\u0e25\u0e35\u0e22
+    \u0e04\u0e27\u0e2d\u0e25\u0e34\u0e15\u0e35\u0e49 \u0e14\u0e35\u0e40\u0e27\u0e25\u0e47\u0e2d\u0e1b\u0e40\u0e21\u0e49\u0e19\u0e15\u0e4c
+    \u0e04\u0e2d\u0e23\u0e4c\u0e1b\u0e2d\u0e40\u0e23\u0e0a\u0e31\u0e48\u0e19 \u0e08\u0e33\u0e01\u0e31\u0e14",
+    "type": "double"}, {"name": "Major Development - \u0e40\u0e21\u0e40\u0e08\u0e2d\u0e23\u0e4c
+    \u0e14\u0e35\u0e40\u0e27\u0e25\u0e25\u0e2d\u0e1b\u0e40\u0e21\u0e49\u0e19\u0e17\u0e4c
+    \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"},
+    {"name": "Noble Development - \u0e42\u0e19\u0e40\u0e1a\u0e34\u0e25 \u0e14\u0e35\u0e40\u0e27\u0e25\u0e25\u0e2d\u0e1b\u0e40\u0e21\u0e19\u0e17\u0e4c
+    \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"},
+    {"name": "Pace Development - \u0e40\u0e1e\u0e0b \u0e14\u0e35\u0e40\u0e27\u0e25\u0e25\u0e2d\u0e1b\u0e40\u0e21\u0e19\u0e17\u0e4c
+    \u0e04\u0e2d\u0e23\u0e4c\u0e1b\u0e2d\u0e40\u0e23\u0e0a\u0e31\u0e48\u0e19 \u0e08\u0e33\u0e01\u0e31\u0e14
+    (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"}, {"name": "Pruksa Real Estate
+    - \u0e1e\u0e24\u0e01\u0e29\u0e32 \u0e40\u0e23\u0e35\u0e22\u0e25\u0e40\u0e2d\u0e2a\u0e40\u0e15\u0e17
+    \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"},
+    {"name": "Quality Houses - \u0e04\u0e27\u0e2d\u0e25\u0e34\u0e15\u0e35\u0e49 \u0e40\u0e2e\u0e49\u0e32\u0e2a\u0e4c
+    \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"},
+    {"name": "Raimon Land - \u0e44\u0e23\u0e21\u0e2d\u0e19 \u0e41\u0e25\u0e19\u0e14\u0e4c
+    \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"},
+    {"name": "SC Asset - \u0e40\u0e2d\u0e2a\u0e0b\u0e35 \u0e41\u0e2d\u0e2a\u0e40\u0e2a\u0e17
+    \u0e04\u0e2d\u0e23\u0e4c\u0e1b\u0e2d\u0e40\u0e23\u0e0a\u0e31\u0e48\u0e19 \u0e08\u0e33\u0e01\u0e31\u0e14
+    (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"}, {"name": "Sansiri - \u0e41\u0e2a\u0e19\u0e2a\u0e34\u0e23\u0e34
+    \u0e08\u0e33\u0e01\u0e31\u0e14 (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"},
+    {"name": "Supalai - \u0e28\u0e38\u0e20\u0e32\u0e25\u0e31\u0e22 \u0e08\u0e33\u0e01\u0e31\u0e14
+    (\u0e21\u0e2b\u0e32\u0e0a\u0e19)", "type": "double"}, {"name": "TCC Capital land
+    - \u0e17\u0e35\u0e0b\u0e35\u0e0b\u0e35 \u0e41\u0e04\u0e1b\u0e1b\u0e34\u0e15\u0e2d\u0e25
+    \u0e41\u0e25\u0e19\u0e14\u0e4c \u0e08\u0e33\u0e01\u0e31\u0e14", "type": "double"},
+    {"name": "The Icon Siam Superlux Residence - \u0e14\u0e34 \u0e44\u0e2d\u0e04\u0e2d\u0e19\u0e2a\u0e22\u0e32\u0e21
+    \u0e0b\u0e39\u0e40\u0e1b\u0e2d\u0e23\u0e4c\u0e25\u0e31\u0e01\u0e0b\u0e4c \u0e40\u0e23\u0e2a\u0e0b\u0e34\u0e40\u0e14\u0e19\u0e0b\u0e4c
+    \u0e04\u0e2d\u0e23\u0e4c\u0e1b\u0e2d\u0e40\u0e23\u0e0a\u0e31\u0e48\u0e19 \u0e08\u0e33\u0e01\u0e31\u0e14",
+    "type": "double"}, {"name": "no", "type": "double"}, {"name": "1981", "type":
+    "double"}, {"name": "1982", "type": "double"}, {"name": "1992", "type": "double"},
+    {"name": "1993", "type": "double"}, {"name": "1994", "type": "double"}, {"name":
+    "1995", "type": "double"}, {"name": "1996", "type": "double"}, {"name": "1997",
+    "type": "double"}, {"name": "1998", "type": "double"}, {"name": "1999", "type":
+    "double"}, {"name": "2000", "type": "double"}, {"name": "2001", "type": "double"},
+    {"name": "2004", "type": "double"}, {"name": "2005", "type": "double"}, {"name":
+    "2006", "type": "double"}, {"name": "2007", "type": "double"}, {"name": "2008",
+    "type": "double"}, {"name": "2009", "type": "double"}, {"name": "2010", "type":
+    "double"}, {"name": "2011", "type": "double"}, {"name": "2012", "type": "double"},
+    {"name": "2013", "type": "double"}, {"name": "2014", "type": "double"}, {"name":
+    "2015", "type": "double"}, {"name": "2016", "type": "double"}, {"name": "2017",
+    "type": "double"}, {"name": "2018", "type": "double"}, {"name": "2019", "type":
+    "double"}, {"name": "2020", "type": "double"}, {"name": "2021", "type": "double"},
+    {"name": "2022", "type": "double"}, {"name": "2023", "type": "double"}, {"name":
+    "2024", "type": "double"}, {"name": "Bang Rak", "type": "double"}, {"name": "Chatuchak",
+    "type": "double"}, {"name": "Huai Khwang", "type": "double"}, {"name": "Khlong
+    San", "type": "double"}, {"name": "Khlong Toei", "type": "double"}, {"name": "Pathum
+    Wan", "type": "double"}, {"name": "Phra Khanong", "type": "double"}, {"name":
+    "Ratchathewi", "type": "double"}, {"name": "Sathon", "type": "double"}, {"name":
+    "Watthana", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+utc_time_created: '2023-01-08 18:32:14.494397'

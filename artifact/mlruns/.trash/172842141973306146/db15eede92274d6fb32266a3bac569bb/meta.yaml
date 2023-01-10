@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/db15eede92274d6fb32266a3bac569bb/artifacts
+deleted_time: 1672085926357
+end_time: 1672085890591
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: db15eede92274d6fb32266a3bac569bb
+run_name: classy-moth-517
+run_uuid: db15eede92274d6fb32266a3bac569bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085878569
+status: 3
+tags: []
+user_id: root

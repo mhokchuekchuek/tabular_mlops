@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/57e5b0613acc459082d03b464b1e23ed/artifacts
+deleted_time: 1672223099685
+end_time: 1672223061872
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: 57e5b0613acc459082d03b464b1e23ed
+run_name: RandomForestRegressor {}
+run_uuid: 57e5b0613acc459082d03b464b1e23ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672223046574
+status: 3
+tags: []
+user_id: root

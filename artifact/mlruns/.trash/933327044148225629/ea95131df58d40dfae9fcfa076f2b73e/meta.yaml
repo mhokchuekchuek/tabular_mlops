@@ -1,0 +1,15 @@
+artifact_uri: /artifact/mlruns/933327044148225629/ea95131df58d40dfae9fcfa076f2b73e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '933327044148225629'
+lifecycle_stage: active
+run_id: ea95131df58d40dfae9fcfa076f2b73e
+run_name: upset-snake-495
+run_uuid: ea95131df58d40dfae9fcfa076f2b73e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672233632828
+status: 1
+tags: []
+user_id: unknown

@@ -68,7 +68,7 @@ services:
       - ./save_pipeline:/save_pipeline
       - ./eda_html:/eda_html
       - ./model_interpret:/model_interpret
-    command: streamlit run /code/notebook/script/run_streamlit_eda.py --server.port 8504
+    command: streamlit run /code/notebook/script/run_streamlit/run_streamlit_eda.py --server.port 8504
 
   eda:
     build:
@@ -85,7 +85,7 @@ services:
       - ./save_pipeline:/save_pipeline
       - ./eda_html:/eda_html
       - ./model_interpret:/model_interpret
-    command: streamlit run /code/notebook/script/run_streamlit_dq.py --server.port 8503
+    command: streamlit run /code/notebook/script/run_streamlit/run_streamlit_dq.py --server.port 8503
 
   streamlit_eval:
     build:
@@ -102,7 +102,7 @@ services:
       - ./save_pipeline:/save_pipeline
       - ./eda_html:/eda_html
       - ./model_interpret:/model_interpret
-    command: streamlit run /code/notebook/script/run_streamlit_evaluate.py
+    command: streamlit run /code/notebook/script/run_streamlit/run_streamlit_evaluate.py
 
   streamlit_interpret:
     build:
@@ -119,4 +119,4 @@ services:
       - ./save_pipeline:/save_pipeline
       - ./eda_html:/eda_html
       - ./model_interpret:/model_interpret
-    command: streamlit run /code/notebook/script/run_streamlit_interpret.py --server.port 8502
+    command: streamlit run /code/notebook/script/run_streamlit/run_streamlit_interpret.py --server.port 8502

@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/263062f69d4a4facb7fe6019d1db0018/artifacts
+deleted_time: 1672085926409
+end_time: 1672085435527
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: 263062f69d4a4facb7fe6019d1db0018
+run_name: sneaky-cod-516
+run_uuid: 263062f69d4a4facb7fe6019d1db0018
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085409170
+status: 3
+tags: []
+user_id: root

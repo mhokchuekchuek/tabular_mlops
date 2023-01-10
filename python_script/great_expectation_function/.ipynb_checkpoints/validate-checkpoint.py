@@ -32,7 +32,7 @@ def data_validation(dataframe, datasource_name:str, overwrite: bool):
             result = dq_checker.validate_data()
     return dq_checker.render_file
 
-def path_to_json(dataframe, datasource_name:str, overwrite:bool = False):
+def path_to_json(dataframe, datasource_name:str, overwrite:bool = True):
     path_to_list  = data_validation(dataframe, datasource_name, overwrite).split("/")
     template_dir = os.path.abspath("/".join(path_to_list[:-1]))
     a = {}

@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/0755f9048e524e88ad92a5854e33f543/artifacts
+deleted_time: 1672132897377
+end_time: 1672086583946
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: 0755f9048e524e88ad92a5854e33f543
+run_name: auspicious-snake-323
+run_uuid: 0755f9048e524e88ad92a5854e33f543
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672086387046
+status: 3
+tags: []
+user_id: root

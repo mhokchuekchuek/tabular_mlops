@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/172842141973306146/368609c16003431e9d076b2a9a869d64/artifacts
+deleted_time: 1672085926407
+end_time: 1672085452697
+entry_point_name: ''
+experiment_id: '172842141973306146'
+lifecycle_stage: deleted
+run_id: 368609c16003431e9d076b2a9a869d64
+run_name: bittersweet-snake-39
+run_uuid: 368609c16003431e9d076b2a9a869d64
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672085435546
+status: 3
+tags: []
+user_id: root

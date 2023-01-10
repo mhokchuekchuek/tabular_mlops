@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/286978358198217900/5ab4c13942964b9888f40e4b9275c666/artifacts
+deleted_time: 1672238994264
+end_time: 1672238213396
+entry_point_name: ''
+experiment_id: '286978358198217900'
+lifecycle_stage: deleted
+run_id: 5ab4c13942964b9888f40e4b9275c666
+run_name: persistent-shoat-428
+run_uuid: 5ab4c13942964b9888f40e4b9275c666
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672238211336
+status: 4
+tags: []
+user_id: root

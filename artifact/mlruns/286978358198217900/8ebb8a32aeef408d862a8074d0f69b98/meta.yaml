@@ -1,0 +1,16 @@
+artifact_uri: /artifact/mlruns/286978358198217900/8ebb8a32aeef408d862a8074d0f69b98/artifacts
+deleted_time: 1673204642926
+end_time: 1673202736574
+entry_point_name: ''
+experiment_id: '286978358198217900'
+lifecycle_stage: deleted
+run_id: 8ebb8a32aeef408d862a8074d0f69b98
+run_name: XGBRegressor {}
+run_uuid: 8ebb8a32aeef408d862a8074d0f69b98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1673202719433
+status: 3
+tags: []
+user_id: root
