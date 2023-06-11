@@ -1,8 +1,0 @@
-mlflow
-cffi==1.15.1
-cloudpickle==2.2.0
-dataclasses==0.6
-defusedxml==0.7.1
-lightgbm==3.3.3
-scikit-learn==1.0.2
-typing-extensions==4.4.0
